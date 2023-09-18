@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap'); 
+
+* {
+  box-sizing: border-box;
+}
+body{
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+}
+.container{
+  display: flex;
+
+  width: 100%;
+}
+.slide{
+  height: 80vh;
+}
+.slide {
+  height: 80vh;
+  border-radius: 20px;
+  margin: 10px;
+  cursor: pointer;
+  color: #fff;
+  flex: 1;
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  transition: all 500ms ease-in-out;
+}
+body {
+  font-family: 'Muli', sans-serif;
+  overflow: hidden;
+  margin: 0;
+  background-color: black;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.container{
+  width: 100%;
+  display: flex;
+  padding: 0 20px;
+}
+.slide {
+  height: 80vh;
+  border-radius: 20px;
+  margin: 10px;
+  cursor: pointer;
+  color: #fff;
+  flex: 1;
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  transition: all 500ms ease-in-out;
+}
+.slide h3{
+  position: absolute;
+  font-size: 24px;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  opacity: 0;
+}
+.slide.active{
+  flex: 10;
+  transition: all 2s ease-in-out;
+}
+.slide.active h3{
+  opacity: 1;
+  transition: all 0.3s ease-in 0.4s;
+}
+.slide img{
+  position: absolute;
+  bottom: -100px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+}
+.color{
+  color: orangered;
+}
+.white-circle{
+  background-color: white;
+  color: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+  cursor: pointer;
+
+}
+.circle-form{
+  display: flex;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+}
